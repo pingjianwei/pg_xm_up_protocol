@@ -1,0 +1,206 @@
+2017-12-03 17:49:22 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.626.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.624.0>]
+    messages: []
+    links: [<0.625.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1286
+  neighbours:
+2017-12-03 17:49:22 =SUPERVISOR REPORT====
+     Supervisor: {local,up_config_sup}
+     Context:    start_error
+     Reason:     {{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}
+     Offender:   [{pid,undefined},{id,up_config_svr},{mfargs,{up_config_svr,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2017-12-03 17:49:22 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.623.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,up_config_svr,{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}}},{up_config,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.622.0>]
+    messages: [{'EXIT',<0.624.0>,normal}]
+    links: [<0.622.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 101
+  neighbours:
+2017-12-03 17:50:41 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.626.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.624.0>]
+    messages: []
+    links: [<0.625.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1286
+  neighbours:
+2017-12-03 17:54:34 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.720.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.718.0>]
+    messages: []
+    links: [<0.719.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1278
+  neighbours:
+2017-12-03 17:54:34 =SUPERVISOR REPORT====
+     Supervisor: {local,up_config_sup}
+     Context:    start_error
+     Reason:     {{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}
+     Offender:   [{pid,undefined},{id,up_config_svr},{mfargs,{up_config_svr,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2017-12-03 17:54:34 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.717.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,up_config_svr,{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}}},{up_config,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.716.0>]
+    messages: [{'EXIT',<0.718.0>,normal}]
+    links: [<0.716.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 101
+  neighbours:
+2017-12-03 17:57:00 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.750.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.748.0>]
+    messages: []
+    links: [<0.749.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1278
+  neighbours:
+2017-12-03 17:57:00 =SUPERVISOR REPORT====
+     Supervisor: {local,up_config_sup}
+     Context:    start_error
+     Reason:     {{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}
+     Offender:   [{pid,undefined},{id,up_config_svr},{mfargs,{up_config_svr,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2017-12-03 17:57:00 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.747.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,up_config_svr,{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}}},{up_config,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.746.0>]
+    messages: [{'EXIT',<0.748.0>,normal}]
+    links: [<0.746.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 101
+  neighbours:
+2017-12-03 18:06:02 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.720.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.718.0>]
+    messages: []
+    links: [<0.719.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1293
+  neighbours:
+2017-12-03 18:06:02 =SUPERVISOR REPORT====
+     Supervisor: {local,up_config_sup}
+     Context:    start_error
+     Reason:     {{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}
+     Offender:   [{pid,undefined},{id,up_config_svr},{mfargs,{up_config_svr,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2017-12-03 18:06:02 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.717.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,up_config_svr,{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}}},{up_config,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.716.0>]
+    messages: [{'EXIT',<0.718.0>,normal}]
+    links: [<0.716.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 101
+  neighbours:
+2017-12-03 18:07:36 =CRASH REPORT====
+  crasher:
+    initial call: up_config_svr:init/1
+    pid: <0.720.0>
+    registered_name: []
+    exception exit: {{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [up_config_sup,<0.718.0>]
+    messages: []
+    links: [<0.719.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 1293
+  neighbours:
+2017-12-03 18:07:36 =SUPERVISOR REPORT====
+     Supervisor: {local,up_config_sup}
+     Context:    start_error
+     Reason:     {{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}
+     Offender:   [{pid,undefined},{id,up_config_svr},{mfargs,{up_config_svr,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2017-12-03 18:07:36 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.717.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,up_config_svr,{{badmatch,undefined},[{utils_env,default_app,0,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,30}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,68}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,'-get_path/1-lc$^0/1-0-',1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{utils_env,get_path,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/xfutils/src/utils_env.erl"},{line,77}]},{up_config_svr,key_file_name,2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,343}]},{up_config_svr,load_private_key,1,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,355}]},{up_config_svr,'-get_mer_list/0-fun-4-',2,[{file,"/mnt/e/pingjianwei/pg-apps/pg_xm_up_protocol/_build/default/lib/up_config/src/up_config_svr.erl"},{line,279}]}]}}},{up_config,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.716.0>]
+    messages: [{'EXIT',<0.718.0>,normal}]
+    links: [<0.716.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 101
+  neighbours:

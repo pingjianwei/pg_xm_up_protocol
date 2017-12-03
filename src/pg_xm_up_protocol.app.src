@@ -1,0 +1,22 @@
+{application, pg_xm_up_protocol,
+ [{description, "An OTP library"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    inets,
+    sasl,
+    ssl
+   ]},
+  {env, [
+   {up_repo_name, repo_up_txn_log_pt}
+   , {mchants_repo_name, repo_mchants_pt}
+   , {debug, true}
+  ]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
