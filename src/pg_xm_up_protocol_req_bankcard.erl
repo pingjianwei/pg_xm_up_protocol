@@ -91,7 +91,7 @@ convert_config() ->
                 , {phone, mobile}
                 , {acct_no, bank_card_no}
                 , {tran_time, {fun now_txn/0, []}}
-                , {out_trade_no, {fun xfutils:get_new_order_id/0, []}}
+                , {out_trade_no, {fun get_new_order_id/0, []}}
                 , {verify_type, {fun get_verify_type/1, [mobile]}}
                 , {mcht_index_key, mcht_index_key}
               ]
@@ -146,14 +146,20 @@ mer_id_test_1() ->
   ?assertEqual(<<"898319849000017">>, mer_id(1)),
   ok.
 %%------------------------------------------------------------------------------
+get_new_order_id()->
+  << <<"jf">>/binary,(xfutils:get_new_order_id())/binary >>.
+%%------------------------------------------------------------------------------
 public_key(MchtId) ->
   MerId = mer_id(MchtId),
   PublicKey = up_config:get_mer_prop(MerId, publicKey),
   PublicKey.
 
 now_txn() ->
-  <<"2017-05-03 16:21:30">>.
-%%  datetime_x_fin:now(txn).
+  LocalTime = calendar:now_to_local_time(erlang:now()),
+  {{Year, Month, Day}, {Hour, Minute, Second}} = LocalTime,
+  FormatTime = lists:flatten(io_lib:format("~4..0w-~2..0w-~2..0w ~2..0w:~2..0w:~2..0w",
+    [Year, Month, Day, Hour, Minute, Second])),
+  list_to_binary(FormatTime).
 %%--------------------------------------------------------------------------
 get_verify_type(Mobile) ->
   case Mobile of
