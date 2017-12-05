@@ -70,7 +70,7 @@ sign_fields() ->
 options() ->
   #{
     channel_type => xm_up,
-    txn_type=>xm_up_bankcard,
+    txn_type=>gw_xm_up_bankcard,
     direction => req
   }.
 
@@ -107,13 +107,13 @@ convert_config() ->
           [
             {?MODULE,
               [
-                {txn_type, {static, xm_bankcatd}}
+                {txn_type, {static, gw_xm_up_bankcard}}
                 , {txn_status, {static, waiting}}
-                , {mcht_index_key, pg_model, mcht_index_key}
+                , {mcht_index_key, mcht_index_key}
                 , {up_merId, customer_code}
                 , {up_txnTime, tran_time}
                 , {up_orderId, out_trade_no}
-                , {up_index_key, pg_up_protocol, up_index_key}
+                , {up_index_key, pg_xm_up_protocol, up_index_key}
                 , {up_accNo, acct_no}
                 , {up_idNo, cert_no}
                 , {up_idName, name}
@@ -142,12 +142,9 @@ mer_id(MchtId) ->
   MerIdBin = atom_to_binary(MerIdAtom, utf8),
   MerIdBin.
 
-mer_id_test_1() ->
-  ?assertEqual(<<"898319849000017">>, mer_id(1)),
-  ok.
 %%------------------------------------------------------------------------------
-get_new_order_id()->
-  << <<"jf">>/binary,(xfutils:get_new_order_id())/binary >>.
+get_new_order_id() ->
+  <<<<"jf">>/binary, (xfutils:get_new_order_id())/binary>>.
 %%------------------------------------------------------------------------------
 public_key(MchtId) ->
   MerId = mer_id(MchtId),
